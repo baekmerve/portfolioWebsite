@@ -26,36 +26,23 @@ module.exports = {
       },
 
       animation: {
-        borderMove: "border_move 5s ease-in-out infinite",
-        colorChange: "colorChange 6s infinite ease-in-out",
+        borderMove: "border_move 8s ease-in-out infinite 1s",
+        colorChange: "colorChange 8s infinite ease-in-out 1s",
       },
       keyframes: {
         colorChange: {
           "0%, 100%": {
             background: "#ff7eb3",
-            boxShadow: "5px 10px 20px rgba(255, 126, 179, 0.6)",
+            boxShadow: "5px -10px 20px rgba(255, 126, 179, 0.6)",
             transform: "translate(0, 0)",
-            borderRadius: "30% 45% 70% 30% / 60% 30% 70% 40%",
-          },
-          "25%": {
-            background: "#ff8c00",
-            boxShadow: "5px 10px 20px rgba(255, 140, 0, 0.6)",
-            transform: "translate(5px, 5px)",
-            borderRadius: "50% 60% 40% 60% / 50% 40% 60% 50%",
+            borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%",
           },
           "50%": {
-            background: "#7eb3ff",
-            boxShadow: "10px 15px 30px rgba(126, 179, 255, 0.8)",
-            transform: "translate(10px, 15px)",
-            borderRadius: "40% 50% 30% 70% / 60% 40% 60% 50%",
-          },
-          "75%": {
             background: "#00ffff",
-            boxShadow: "10px 15px 30px rgba(0, 255, 255, 0.7)",
+            boxShadow: "-10px 15px 30px rgba(0, 255, 255, 0.7)",
             transform: "translate(15px, 20px)",
-            borderRadius: "60% 30% 60% 40% / 50% 30% 40% 70%",
+            borderRadius: "30% 60% 70% 40% / 50% 60% 30% 60%",
           },
-          
         },
 
         border_move: {
