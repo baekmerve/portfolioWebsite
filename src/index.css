@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+
+}
+
+@layer base {
+  body {
+    @apply text-paper bg-primary leading-loose font-jost;
+    .text-outline {
+      -webkit-text-stroke: 2px white;
+    }
+    .text-outline-color {
+      -webkit-text-stroke: 2px cyan;
+    }
+    .text-outline-4 {
+      -webkit-text-stroke: 4px white;
+    }
+  }
+}
