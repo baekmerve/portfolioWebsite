@@ -1,9 +1,15 @@
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import TextAnimation from "@/components/TextAnimation";
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -50 },
   visible: { opacity: 1, x: 0 },
+};
+
+const fadeInBottom = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
 };
 const Contact = () => {
   const {
@@ -21,25 +27,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 w-5/6 mx-auto md:h-full">
+    <section id="contact" className="my-32 w-5/6 mx-auto md:h-full ">
       {/* HEADINGS */}
-      <motion.div
-        className="md:w-2/5 text-center md:text-left"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-        variants={fadeInLeft}
-      >
-        <div>
-          <p className="font-caveat font-semibold text-5xl md:text-6xl mb-12">
-            CONTACT <span className="text-cyan">ME</span>
-          </p>
-        </div>
-      </motion.div>
+      <TextAnimation text="CONTACT ME" />
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16  items-center">
+      <div className="md:flex md:justify-between gap-16  items-center ">
         <motion.div
           initial="hidden"
           viewport={{ once: true, amount: 0.5 }}
@@ -47,12 +40,12 @@ const Contact = () => {
             y: [0, 20, 0], // Moves up and down
             transition: { duration: 2, repeat: Infinity, repeatType: "loop" }, // Infinite loop
           }}
-          className="basis-1/2 flex justify-center"
+          className="basis-1/2 flex justify-center "
         >
           <img
             src="../assets/images/contact-image.svg"
             alt="contact"
-            className="w-[500px] h-[500px] "
+            className="w-[300px] h-[300px] md:w-[500px] md:h-[500px]"
           />
         </motion.div>
 
@@ -61,11 +54,8 @@ const Contact = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.5 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          className="basis-1/2 mt-10 md:mt-10 "
+          variants={fadeInBottom}
+          className="basis-1/2 mt-2 md:mt-10 "
         >
           <form
             target="_blank"
@@ -74,7 +64,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-transparent font-semibold border-2 border-red rounded-2xl placeholder-white/60 p-3 hover:border hover:border-brightBlue"
+              className="w-full bg-transparent text-sm font-semibold border-2 border-red rounded-2xl placeholder-white/60 p-3 hover:border hover:border-brightBlue"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -91,7 +81,7 @@ const Contact = () => {
             )}
 
             <input
-              className=" w-full border-2 border-red bg-transparent font-semibold placeholder-white/60 rounded-2xl p-3 mt-5 hover:border hover:border-brightBlue"
+              className=" w-full border-2 border-red bg-transparent font-semibold text-sm placeholder-white/60 rounded-2xl p-3 mt-5 hover:border hover:border-brightBlue"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -107,7 +97,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full border-2 border-red bg-transparent font-semibold placeholder-white/60 rounded-2xl p-3 hover:border hover:border-brightBlue mt-5"
+              className="w-full border-2 border-red bg-transparent font-semibold text-sm placeholder-white/60 rounded-2xl p-3 hover:border hover:border-brightBlue mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -127,10 +117,10 @@ const Contact = () => {
             )}
 
             <button
-              className="p-4 bg-cyan font-semibold rounded-2xl text-white mt-5 hover:bg-brightBlue transition duration-500"
+              className="p-4 bg-cyan font-semibold rounded-2xl text-white mt-5 hover:bg-brightBlue transition text-sm duration-500"
               type="submit"
             >
-              SEND ME A MESSAGE
+              SEND
             </button>
           </form>
         </motion.div>

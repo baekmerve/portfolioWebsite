@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import LandingTextAnimation from "@/components/LandingTextAnimation";
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -50 },
@@ -12,19 +13,21 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-32 w-5/6 mx-auto "
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full my-20 w-5/6 mx-auto pt-10"
     >
       {/* Image Section */}
+
       <div className="md:order-2 mt-20 md:mt-32 flex justify-center basis-2/5 z-10 ">
         <img
           alt="Profile image of Merve Baek, a frontend developer"
           src="assets/images/profile-image.jpeg"
-          className=" hover:filter hover:saturate-150 max-w-[300px] md:max-w-[450px] transition  animate-colorChange rounded-full"
+          className=" hover:filter hover:saturate-150 max-w-[300px] md:max-w-[450px] transition rounded-full animate-colorChange 
+           "
         />
       </div>
-
       {/* MAIN SECTION */}
       <div className="basis-3/5 mt-12 md:mt-32">
+        {/* Headings*/}
         {/* Headings*/}
         <motion.div
           initial="hidden"
@@ -33,22 +36,18 @@ const Landing = ({ setSelectedPage }) => {
           transition={{ duration: 0.7 }}
           variants={fadeInLeft}
         >
-          <p className="font-bold text-center md:text-start">
-            HELLO, <span className="text-cyan font-bold">MY NAME IS</span>
-          </p>
-          <p className="mt-3 text-4xl md:text-8xl font-caveat z-10  text-center md:text-start ">
-            MERVE BAEK
-          </p>
-          <p className="my-3 text-xs md:text-sm text-center md:text-start font-bold">
-            I AM
-            <span className="text-xl md:text-3xl ml-3 font-caveat text-cyan">
-              Fronted Developer
-            </span>
-          </p>
-          <p className=" my-8 md:my-10 md:text-lg text-center md:text-start text-paper">
-            focused on building clean, responsive, and user-friendly websites.
-            Passionate about creating solutions that deliver results.
-          </p>
+          <div className="flex-col text-center md:text-start">
+            <p className="mt-3 text-4xl md:text-8xl font-caveat text-paper z-10">
+              MERVE BAEK
+            </p>
+            <p className="text-xl md:text-3xl ml-3 font-caveat text-cyan">
+              Jr. Frontend Developer
+            </p>
+            <p className=" my-8 md:my-10 md:text-lg  text-paper">
+              Focused on building clean, responsive, and user-friendly websites.
+              Passionate about creating solutions that deliver results.
+            </p>
+          </div>
         </motion.div>
         {/* CALL TO ACTIONS */}
         <motion.div
