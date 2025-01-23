@@ -91,18 +91,18 @@ const Projects = () => {
             {projectList.map((project, index) => {
               return (
                 <SwiperSlide key={index} className=" w-fit px-7 ">
-                  <div className="h-[460px] relative group flex justify-center items-center rounded-2xl">
-                    {/* overlay */}
-                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/20 z-10 "></div>
+                  {/* <div
+                   className="h-[460px]  group flex justify-center items-center rounded-2xl border"
+                  > */}
                     {/* image */}
-                    <div className="relative w-full h-full">
+                    <div className=" h-[360px] md:h-[460px] w-full border rounded-2xl ">
                       <img
                         src={`assets/images/${project.image}`}
                         alt="project image"
                         className=" object-cover w-full h-full rounded-2xl"
                       />
                     </div>
-                  </div>
+                  {/* </div> */}
                 </SwiperSlide>
               );
             })}
