@@ -14,10 +14,10 @@ const SocialMediaIcons = ({ github, notion }) => {
       <a href={github} target="_blank" rel="noopener noreferrer">
         <TooltipProvider delayDuration={100}>
           <Tooltip>
-            <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
-              <SiGithub className="text-white text-3xl group-hover:text-cyan" />
+            <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center hover:scale-105">
+              <SiGithub className="text-white text-3xl " />
             </TooltipTrigger>
-            <TooltipContent className="rounded-2xl bg-white/50 text-paper p-1 border-none">
+            <TooltipContent className=" text-paper p-1 border-none bg-transparent">
               Github
             </TooltipContent>
           </Tooltip>
@@ -27,10 +27,10 @@ const SocialMediaIcons = ({ github, notion }) => {
       <a href={notion} target="_blank" rel="noopener noreferrer">
         <TooltipProvider delayDuration={100}>
           <Tooltip>
-            <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
-              <SiNotion className="text-white text-3xl group-hover:text-cyan" />
+            <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group hover:scale-105">
+              <SiNotion className="text-white text-3xl " />
             </TooltipTrigger>
-            <TooltipContent className="rounded-2xl bg-white/50 text-paper p-1 border-none">
+            <TooltipContent className="text-paper p-1 border-none bg-transparent">
               Notion
             </TooltipContent>
           </Tooltip>
