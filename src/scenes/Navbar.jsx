@@ -6,7 +6,6 @@ import { RiMenu3Fill } from "react-icons/ri";
 
 const NavLink = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
-
   const commonButtonStyle = `text-center hover:transition hover:scale-105 transition-all duration-500`;
 
   return (
@@ -29,7 +28,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width:768px)");
 
   return (
-    <nav className={"bg-primary z-40 w-full fixed top-0 py-6"}>
+    <nav className={"bg-primary z-40 w-full fixed top-0 pt-2 "}>
       <div className="flex items-center justify-between mx-auto w-5/6  ">
         <AnchorLink href="#home" onClick={() => setSelectedPage("home")}>
           <img

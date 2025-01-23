@@ -11,7 +11,6 @@ import Projects from "./scenes/Projects";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
-
   const isDesktop = useMediaQuery("(min-width:1060px)"); // check minwith if > 1060 or <1060
 
   return (
