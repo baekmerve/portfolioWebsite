@@ -4,51 +4,41 @@ export const projectList = [
     num: "01",
     image: "vibedup.png",
     title: "VibedUp",
-    description: "VibedUp, a platform where you can share vide and post",
+    description:
+      "VibedUp aims to provide users with an intuitive and valuable experience on mobile devices, leveraging the latest web technologies and an efficient backend system for development. Users can enjoy a variety of content, manage their favorites, and customize their own feed.",
     github: "https://github.com/baekmerve/Vibeo",
     notion: "https://www.notion.so/VibedUp-158944a64b328110b409feedf4414a2e",
-    stack: [{ name: "React Native" }, { name: "Tailwind.css" }],
+    stack: [
+      { name: "React Native" },
+      { name: "JavaScript" },
+      { name: "Tailwind.css" },
+      { name: "ReactContext" },
+      { name: "Appwrite" },
+    ],
   },
   {
     id: 2,
     num: "02",
-    image: "actionprice2.png",
+    image: "actionprice.png",
     title: "ActionPrice",
     description:
-      "Lorem ipsum dolor sit amet comsector adikrflj rttgkfjdslr rejdkls",
+      "Action Price is a platform that provides auction price information for agricultural and marine products, helping facilitate fair and transparent transactions between producers and consumers. By offering auction data, Action Price supports farmers and distributors in making rational transactions and transparently discloses prices, aiming to eliminate inconveniences in the trading process. Specifically, the platform is designed to quickly and easily provide essential information to users who struggle with product selection, thereby assisting them in making efficient and rational decisions.",
     github: "https://github.com/baekmerve/ActionPrice-FE",
     notion:
       "https://www.notion.so/3fc2723651e6407fb971b8fdfd8fe2d6?p=b0b962413bab4aa1b2c9bb7a4138474f&pm=c",
-    stack: [{ name: "React.s" }, { name: "Boostrap.css" }],
+    stack: [
+      { name: "React.s" },
+      { name: "Material UI" },
+      { name: "JavaScript" },
+      { name: "Redux" },
+    ],
   },
 ];
-//about data
-export const about = {
-  title: "About Me",
-  description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,olestiae quas vel sint commodi repudiandae consequuntur voluptatum.",
-  info: [
-    {
-      fieldName: "Name",
-      fieldValue: "Merve Baek",
-    },
-    {
-      fieldName: "Experience",
-      fieldValue: "4+ Years",
-    },
-    ,
-    {
-      fieldName: "Languages",
-      fieldValue: "English, Korean, Turkish",
-    },
-  ],
-};
+
 
 export const experience = {
-  icon: "/assests/icons/badge.svg",
-  title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,olestiae quas vel sint commodi repudiandae consequuntur voluptatum.",
+    "I have nearly five years of professional experience, including four years as a Customer Experience Manager and one year as a Product Manager. During this time, I've honed my skills in customer satisfaction, operational efficiency, and product development, contributing to both client success and strategic business growth.",
   items: [
     {
       company: "Localley",
@@ -65,10 +55,8 @@ export const experience = {
 
 //education data
 export const education = {
-  icon: "/assests/icons/cap.svg",
-  title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,olestiae quas vel sint commodi repudiandae consequuntur voluptatum.",
+    "Recently completed an intensive six-month full-stack development course. The combination of my education and training reflects my dedication to understanding human needs and leveraging technical skills to create impactful solutions.",
   items: [
     {
       institution: "Green Computer&Art",
@@ -87,3 +75,45 @@ export const education = {
     },
   ],
 };
+
+export const softSkills = [
+  "English",
+  "Korean",
+  "Turkish",
+  "Github",
+  "Postman",
+  "Slack",
+  "Notion",
+  "RestAPI",
+  "SASS",
+  "Teamwok",
+  "HTML",
+  "CSS",
+  "Javascript",
+  "React",
+  "React Native",
+  "Vite.js",
+  "Tailwind CSS",
+  "Bootstrap",
+  "Figma",
+  "Material UI",
+  "React Query",
+  "MySQL",
+];
+
+
+
+//skills data
+export const skillsData = [
+  { name: "HTML", image: "html.svg" },
+  { name: "CSS", image: "css.svg" },
+  { name: "Javascript", image: "javascript.svg" },
+  { name: "React", image: "react.svg" },
+  { name: "Vite.js", image: "vitejs.svg" },
+  { name: "Tailwind CSS", image: "tailwind.svg" },
+  { name: "Bootstrap", image: "bootstrap.svg" },
+  { name: "Figma", image: "figma.svg" },
+  { name: "Material UI", image: "materialui.svg" },
+  { name: "React Query", image: "reactquery.webp" },
+  { name: "MySQL", image: "mysql.svg" },
+];
