@@ -13,7 +13,7 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="md:flex md:justify-between md:items-center gap-16 md:h-full my-20 w-5/6 mx-auto pt-10"
+      className="md:flex md:justify-between md:items-center gap-16 md:h-full py-20 w-5/6 mx-auto"
     >
       {/* Image Section */}
 

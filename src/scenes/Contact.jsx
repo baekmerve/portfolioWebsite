@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="my-32 w-5/6 mx-auto md:h-full ">
+    <section id="contact" className="py-20 w-5/6 mx-auto md:h-full  ">
       {/* HEADINGS */}
       <TextAnimation text="CONTACT ME" />
 

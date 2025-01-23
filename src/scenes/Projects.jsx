@@ -37,9 +37,9 @@ const Projects = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.5 }}
-      transition={{ duration: 0.7 }}
+      transition={{ duration: 0.5 }}
       variants={fadeInLeft}
-      className=" flex-col items-center justify-center  w-5/6  mx-auto md:h-full"
+      className=" flex-col items-center justify-center w-5/6  mx-auto md:h-full pb-20"
     >
       <TextAnimation text="Here are My Works.." />
 
