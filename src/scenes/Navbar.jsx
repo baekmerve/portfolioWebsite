@@ -33,7 +33,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         <AnchorLink href="#home" onClick={() => setSelectedPage("home")}>
           <img
             src="assets/images/logo.png"
-            className="cursor-pointer w-[100px]"
+            className="cursor-pointer w-[100px] mt-2"
           />
         </AnchorLink>
 
