@@ -114,7 +114,7 @@ const Resume = () => {
             {/* skills */}
             <TabsContent
               value="skills"
-              className="w-full md:max-w-[1000px] flex"
+              className="w-full md:max-w-[1000px]"
             >
               <div className="flex flex-col gap-[30px] w-full md:max-w-[1000px] justify-center items-center  md:items-start">
                 <ul className=" flex gap-3 flex-wrap w-full max-w-[600px] ">
