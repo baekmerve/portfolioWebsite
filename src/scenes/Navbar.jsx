@@ -28,12 +28,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width:768px)");
 
   return (
-    <nav className={"bg-primary z-40 w-full fixed top-0 pt-2 "}>
+    <nav className={"bg-primary z-40 w-full fixed top-0 py-4"}>
       <div className="flex items-center justify-between mx-auto w-5/6  ">
         <AnchorLink href="#home" onClick={() => setSelectedPage("home")}>
           <img
             src="assets/images/logo.png"
-            className="cursor-pointer w-[100px] mt-2"
+            className="cursor-pointer w-[100px]"
           />
         </AnchorLink>
 
