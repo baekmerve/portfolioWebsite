@@ -39,15 +39,15 @@ const Projects = () => {
       viewport={{ once: false, amount: 0.5 }}
       transition={{ duration: 0.5 }}
       variants={fadeInLeft}
-      className=" flex-col items-center justify-center w-5/6  mx-auto md:h-full py-20"
+      className=" flex-col items-center justify-center w-5/6  mx-auto md:h-full pb-20"
     >
-      <TextAnimation text="Here are My Works.." />
+      <TextAnimation text="Here are My Works.." otherStyles="p-3" />
 
-      <div className="flex flex-col md:flex-row md:gap-[30px] container mt-10  ">
+      <div className="flex flex-col md:flex-row md:gap-[30px] container">
         <div className="w-full md:w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none ">
           <div className="flex flex-col gap-[30px] h-[50%] ">
             {/* outline num */}
-            <div className="text-6xl md:text-8xl  text-center md:text-start font-extrabold text-transparent text-outline  md:mt-0 xs:mt-8">
+            <div className="text-6xl md:text-8xl text-center md:text-start font-extrabold text-transparent text-outline mt-3 ">
               {project.num}
             </div>
             {/* project title */}
@@ -91,18 +91,14 @@ const Projects = () => {
             {projectList.map((project, index) => {
               return (
                 <SwiperSlide key={index} className=" w-fit px-7 ">
-                  {/* <div
-                   className="h-[460px]  group flex justify-center items-center rounded-2xl border"
-                  > */}
-                    {/* image */}
-                    <div className=" h-[360px] md:h-[460px] w-full border rounded-2xl ">
-                      <img
-                        src={`assets/images/${project.image}`}
-                        alt="project image"
-                        className=" object-cover w-full h-full rounded-2xl"
-                      />
-                    </div>
-                  {/* </div> */}
+                  {/* image */}
+                  <div className="h-[360px] md:h-[460px] w-full rounded-2xl ">
+                    <img
+                      src={`assets/images/${project.image}`}
+                      alt="project image"
+                      className=" object-cover w-full h-full rounded-2xl"
+                    />
+                  </div>
                 </SwiperSlide>
               );
             })}

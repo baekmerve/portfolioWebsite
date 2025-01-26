@@ -15,7 +15,7 @@ const Footer = () => {
             />
           </div>
 
-          <p className="font-caveat text-md text-paper">
+          <p className="font-caveat text-md text-paper mt-10">
             ©2025 BAEK. All Rights Reserved.
           </p>
         </div>

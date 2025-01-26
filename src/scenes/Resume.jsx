@@ -23,9 +23,9 @@ const Resume = () => {
       viewport={{ once: false, amount: 0.5 }}
       transition={{ duration: 0.5 }}
       variants={fadeInLeft}
-      className=" flex-col items-center justify-center  w-5/6  mx-auto md:h-full py-20"
+      className=" flex-col items-center justify-center w-5/6 mx-auto md:h-full my-20"
     >
-      <div className="mb-10">
+      <div className="mb-10 ">
         <TextAnimation text="Career Overview" />
       </div>
 
@@ -38,7 +38,7 @@ const Resume = () => {
           defaultValue="experience"
           className="flex flex-col md:flex-row gap-[60px]   justify-center"
         >
-          <TabsList className=" flex flex-col w-full max-w-[350px] mx-auto gap-6 ">
+          <TabsList className=" flex flex-col w-full max-w-[350px] mx-auto gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -114,9 +114,9 @@ const Resume = () => {
             {/* skills */}
             <TabsContent
               value="skills"
-              className="max-w-[600px] md:max-w-[1000px] "
+              className="w-full md:max-w-[1000px] flex"
             >
-              <div className="flex flex-col gap-[30px] max-w-[600px] md:max-w-[1000px] justify-center items-center  md:items-start ">
+              <div className="flex flex-col gap-[30px] w-full md:max-w-[1000px] justify-center items-center  md:items-start">
                 <ul className=" flex gap-3 flex-wrap w-full max-w-[600px] ">
                   {softSkills.map((skill, index) => {
                     return (
