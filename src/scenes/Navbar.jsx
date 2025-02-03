@@ -28,7 +28,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
   const isDesktop = useMediaQuery("(min-width:768px)");
 
   return (
-    <nav className={"bg-primary z-40 w-full fixed top-0 py-4"}>
+    <nav
+      className={`${
+        isDesktop ? "backdrop-blur bg-primary/60" : "  bg-primary/80"
+      }
+        z-40 w-full sticky top-0 py-4 `}
+    >
       <div className="flex items-center justify-between mx-auto w-5/6  ">
         <AnchorLink href="#home" onClick={() => setSelectedPage("home")}>
           <img
@@ -36,7 +41,6 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             className="cursor-pointer w-[100px]"
           />
         </AnchorLink>
-
         {/* Desktop Nav */}
         {isDesktop ? (
           <div className="flex justify-between gap-16 font-jost text-lg font-semibold ">
@@ -70,8 +74,9 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
           />
         )}
         {/* MOBILE MENU  */}
+
         {!isDesktop && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full  bg-[#28282e] w-[250px]">
+          <div className="fixed right-0 bottom-0 h-full backdrop-blur bg-primary/80 w-[250px]">
             {/* Close Icon */}
             <div className="flex justify-end p-10">
               <IoMdClose
