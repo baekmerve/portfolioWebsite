@@ -63,6 +63,7 @@ const Projects = () => {
               <SocialMediaIcons
                 github={project.github}
                 notion={project.notion}
+                live={project.live}
               />
             </div>
             {/* border */}

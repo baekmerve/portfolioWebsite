@@ -27,14 +27,31 @@ export const projectList = [
     notion:
       "https://www.notion.so/3fc2723651e6407fb971b8fdfd8fe2d6?p=b0b962413bab4aa1b2c9bb7a4138474f&pm=c",
     stack: [
-      { name: "React.s" },
+      { name: "React.js" },
       { name: "Material UI" },
       { name: "JavaScript" },
       { name: "Redux" },
     ],
   },
+  {
+    id: 3,
+    num: "03",
+    image: "skyForecast.png",
+    title: "SkyForecast",
+    description:
+      " SkyForecast allows users to check real-time weather data, including temperature, humidity, wind speed, and air quality, for any city or their current location. It features a user-friendly interface with an option to toggle between light and dark themes. The app provides detailed weather information such as the current temperature, hourly and daily forecasts, and air pollution levels. The design is responsive, ensuring a seamless experience on both desktop and mobile devices. It also includes a 5-day forecast for planning ahead, and dynamic weather updates based on the user's location or searched city.",
+    github: "https://github.com/baekmerve/SKYForecast",
+    notion:
+      "https://www.notion.so/3fc2723651e6407fb971b8fdfd8fe2d6?p=b0b962413bab4aa1b2c9bb7a4138474f&pm=c",
+    live: "https://sky-forecast-iota.vercel.app/",
+    stack: [
+      { name: "React.js" },
+      { name: "shadcn/ui" },
+      { name: "Tailwind.css" },
+      { name: "TanstackQuery" },
+    ],
+  },
 ];
-
 
 export const experience = {
   description:
@@ -100,8 +117,6 @@ export const softSkills = [
   "React Query",
   "MySQL",
 ];
-
-
 
 //skills data
 export const skillsData = [
