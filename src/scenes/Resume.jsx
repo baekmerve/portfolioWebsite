@@ -49,7 +49,7 @@ const Resume = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full ">
               <div className="flex flex-col gap-[30px] text-center md:text-left  ">
-                <p className="max-w-[600px] text-white/80 mx-auto md:mx-0">
+                <p className="max-w-[600px] mx-auto md:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px] ">
@@ -58,7 +58,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] px-5 rounded-xl flex flex-col justify-center items-center gap-1 
+                          className="bg-brown text-paper dark:bg-[#232329] h-[184px] px-5 rounded-xl flex flex-col justify-center items-center gap-1 
                           md:items-start "
                         >
                           <span className="text-cyan"> {item.duration}</span>
@@ -92,11 +92,11 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-1 
+                          className=" bg-brown dark:bg-[#232329] text-paper h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-1 
                           md:items-start "
                         >
                           <span className="text-cyan"> {item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center md:text-left">
+                          <h3 className="text-[17px] max-w-[260px] min-h-[60px] text-center md:text-left">
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -122,7 +122,7 @@ const Resume = () => {
                     return (
                       <li
                         key={index}
-                        className=" rounded-xl py-1 px-2 bg-white/5 hover:scale-105 cursor-pointer"
+                        className=" rounded-xl py-1 px-2 bg-brown/80 hover:scale-105 cursor-pointer text-paper"
                       >
                         {skill}
                       </li>

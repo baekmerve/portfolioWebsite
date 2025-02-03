@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "../components/SocialMediaIcons";
-import LandingTextAnimation from "@/components/LandingTextAnimation";
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -50 },
@@ -21,14 +20,14 @@ const Landing = ({ setSelectedPage }) => {
         <img
           alt="Profile image of Merve Baek, a frontend developer"
           src="assets/images/profile-image.jpeg"
-          className=" hover:filter hover:saturate-150 max-w-[300px] md:max-w-[450px] transition rounded-full animate-colorChange 
+          className=" hover:filter hover:saturate-150 max-w-[300px] md:max-w-[450px] transition rounded-full animate-colorChange p-1 
            "
         />
       </div>
       {/* MAIN SECTION */}
       <div className="basis-3/5 mt-12 md:mt-32">
         {/* Headings*/}
-        {/* Headings*/}
+
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -37,13 +36,13 @@ const Landing = ({ setSelectedPage }) => {
           variants={fadeInLeft}
         >
           <div className="flex-col text-center md:text-start">
-            <p className="mt-3 text-4xl md:text-8xl font-caveat text-paper z-10">
+            <p className="mt-3 text-4xl md:text-8xl font-caveat z-10">
               MERVE BAEK
             </p>
             <p className="text-xl md:text-3xl ml-3 font-caveat text-cyan">
               Jr. Frontend Developer
             </p>
-            <p className=" my-8 md:my-10 md:text-lg  text-paper">
+            <p className=" my-8 md:my-10 md:text-lg  ">
               Focused on building clean, responsive, and user-friendly websites.
               Passionate about creating solutions that deliver results.
             </p>
@@ -59,8 +58,8 @@ const Landing = ({ setSelectedPage }) => {
           variants={fadeInLeft}
         >
           <AnchorLink
-            className=" text-paper bg-cyan rounded-xl p-2 md:p-3 font-semibold transition hover:scale-110 
-             duration-500  "
+            className="  bg-cyan rounded-xl p-2 md:p-3 font-semibold transition hover:scale-110 
+             duration-500  text-paper"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >

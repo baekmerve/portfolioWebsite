@@ -19,7 +19,6 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (e) => {
-    console.log("~ e", e);
     const isValid = await trigger();
     if (!isValid) {
       e.preventDefault();
@@ -27,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 w-5/6 mx-auto md:h-full  ">
+    <section id="contact" className="py-32 w-5/6 mx-auto md:h-full ">
       {/* HEADINGS */}
       <TextAnimation text="CONTACT ME" />
 
@@ -64,7 +63,10 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-transparent text-sm font-semibold border-2 border-red rounded-2xl placeholder-white/60 p-3 hover:border hover:border-brightBlue"
+              className="w-full bg-transparent text-sm font-semibold border-2 border-red rounded-2xl 
+              placeholder-brown/70 
+              dark:placeholder-white/60 
+              p-3 hover:border hover:border-brightBlue"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -81,7 +83,8 @@ const Contact = () => {
             )}
 
             <input
-              className=" w-full border-2 border-red bg-transparent font-semibold text-sm placeholder-white/60 rounded-2xl p-3 mt-5 hover:border hover:border-brightBlue"
+              className=" w-full border-2 border-red bg-transparent font-semibold text-sm placeholder-brown/70 
+              dark:placeholder-white/60 rounded-2xl p-3 mt-5 hover:border hover:border-brightBlue"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -97,7 +100,8 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full border-2 border-red bg-transparent font-semibold text-sm placeholder-white/60 rounded-2xl p-3 hover:border hover:border-brightBlue mt-5"
+              className="w-full border-2 border-red bg-transparent font-semibold text-sm placeholder-brown/70 
+              dark:placeholder-white/60  rounded-2xl p-3 hover:border hover:border-brightBlue mt-5"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -117,7 +121,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-4 bg-cyan font-semibold rounded-2xl text-white mt-5 hover:bg-brightBlue transition text-sm duration-500"
+              className="p-4 bg-cyan font-semibold rounded-2xl  mt-5 hover:bg-red transition text-sm duration-500 text-paper"
               type="submit"
             >
               SEND

@@ -20,7 +20,7 @@ const Projects = () => {
     "flex gap-2 absolute z-10 w-full bottom-[calc(50%_-_22px)] items-center justify-between";
 
   const btnStyles =
-    "-m-1 w-[40px] h-[40px] flex justify-center items-center transition-all rounded-2xl  text-paper ";
+    "-m-1 w-[40px] h-[40px] flex justify-center items-center transition-all rounded-2xl  ";
   const iconStyles = "text-[32px]  hover:text-orange";
 
   const handleSlideChange = (swiper) => {
@@ -47,7 +47,7 @@ const Projects = () => {
         <div className="w-full md:w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none ">
           <div className="flex flex-col gap-[30px] h-[50%] ">
             {/* outline num */}
-            <div className="text-6xl md:text-8xl text-center md:text-start font-extrabold text-transparent text-outline mt-3 ">
+            <div className="text-6xl md:text-8xl text-center md:text-start font-extrabold text-transparent text-outline dark:dark-text-outline mt-3 ">
               {project.num}
             </div>
             {/* project title */}
@@ -55,7 +55,7 @@ const Projects = () => {
               {project.title}
             </p>
             {/* project description */}
-            <p className="text-white/60 text-center md:text-start md:text-xl ">
+            <p className="dark:text-white/60 text-center md:text-start md:text-xl ">
               {project.description}
             </p>
             {/* github & notion buttons */}

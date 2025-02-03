@@ -29,7 +29,7 @@ const SkillMarquee = () => {
           />
 
           {/* skill name */}
-          <p className="text-white text-sm md:text-lg">{item.name}</p>
+          <p className="text-sm md:text-lg">{item.name}</p>
         </div>
       ))}
     </Marquee>

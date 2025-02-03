@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="flex-col justify-center items-center text-center ">
         <div className="flex-col justify-center items-center  ">
           <div className="flex  justify-center items-center gap-10">
-            <p className="font-caveat font-semibold text-2xl text-paper">
+            <p className="font-caveat font-semibold text-2xl ">
               MERVE BAEK
             </p>
             <SocialMediaIcons
@@ -15,7 +15,7 @@ const Footer = () => {
             />
           </div>
 
-          <p className="font-caveat text-md text-paper mt-10">
+          <p className="font-caveat text-md mt-10">
             ©2025 BAEK. All Rights Reserved.
           </p>
         </div>
