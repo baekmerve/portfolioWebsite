@@ -2,7 +2,7 @@ import { useState } from "react";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Footer from "./scenes/Footer";
 import Navbar from "./scenes/Navbar";
-import MainPage from "./page/mainPage";
+import MainPage from "./page/MainPage";
 import { ThemeProvider } from "./context/theme-provider";
 
 function App() {
