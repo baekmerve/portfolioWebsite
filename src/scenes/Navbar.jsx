@@ -37,7 +37,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
         isDesktop
           ? "backdrop-blur dark:bg-primary/60 "
           : "  dark:bg-primary/80 "
-      } z-40 w-full fixed top-0 py-4`}
+      } z-40 w-full fixed top-0 pt-7 pb-4 border`}
     >
       <div className="flex items-center justify-between mx-auto w-5/6 ">
         <AnchorLink href="#home" onClick={() => setSelectedPage("home")}>
