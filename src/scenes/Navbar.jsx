@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { IoMdClose } from "react-icons/io";
@@ -8,13 +8,13 @@ import { Moon, Sun } from "lucide-react";
 
 const NavLink = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
-  const commonButtonStyle = `text-center hover:transition hover:scale-105 transition-all duration-500 text-red/80`;
+  const commonButtonStyle = `text-center hover:transition hover:scale-105 transition-all duration-500 `;
 
   return (
     <AnchorLink
       className={`${
         selectedPage === lowerCasePage
-          ? " text-cyan font-bold transition duration-500 border-b-2 border-red"
+          ? " text-cyan font-bold transition duration-500 border-b-2 border-cyan "
           : " "
       }  ${commonButtonStyle}`}
       href={`#${lowerCasePage}`}
@@ -35,9 +35,9 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
     <nav
       className={`${
         isDesktop
-          ? "backdrop-blur dark:bg-primary/60 "
-          : "  dark:bg-primary/80 "
-      } z-40 w-full fixed top-0 pt-7 pb-4 border`}
+          ? "backdrop-blur bg-secondary/70 dark:bg-primary/70 "
+          : " bg-secondary dark:bg-primary "
+      } z-40 w-full fixed top-0 pt-7 pb-4 `}
     >
       <div className="flex items-center justify-between mx-auto w-5/6 ">
         <AnchorLink href="#home" onClick={() => setSelectedPage("home")}>
@@ -47,7 +47,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
           />
         </AnchorLink>
 
-        {/* Desktop Nav */}
+        {/* Desktop MENU */}
         <div className="flex items-center gap-4">
           {isDesktop && (
             <div className="flex gap-6 font-jost text-lg font-semibold">
@@ -75,8 +75,9 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             </div>
           )}
           {/* Theme Toggle Button (Always Visible) */}
+
           <div
-            className={`flex  items-center cursor-pointer transition-transform duration-500 ml-10 
+            className={`flex  items-center cursor-pointer transition-transform duration-500 ml-10
           ${isDark ? "rotate-180" : "rotate-0"}
           `}
             onClick={() => setTheme(isDark ? "light" : "dark")}
@@ -84,39 +85,38 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             {isDark ? (
               <Sun className="h-6 w-6 text-yellow rotate-0 transition-all" />
             ) : (
-              <Moon className="h-6 w-6 text-blue-500 rotate-0 transition-all" />
+              <Moon className="h-6 w-6 text-brown rotate-0 transition-all" />
             )}
           </div>
 
           {!isDesktop && (
             //? Menu Button
             <RiMenu3Fill
-              className="w-7 h-7 text-cyan"
+              className="w-7 h-7  text-brown dark:text-cyan"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             />
           )}
         </div>
         {/* MOBILE MENU  */}
-
         {!isDesktop && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full backdrop-blur bg-primary/80 w-[250px]">
+          <div className="fixed right-0 bottom-0 h-full backdrop-blur bg-secondary/80 dark:bg-primary/80 w-[250px] ">
             {/* Close Icon */}
             <div className="flex justify-end p-10">
               <IoMdClose
-                className="h-7 w-7 text-cyan"
+                className="h-7 w-7 text-brown dark:text-cyan"
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
               />
             </div>
-            {/* logo */}
 
+            {/* logo */}
             <AnchorLink
               href="#home"
               onClick={() => setSelectedPage("home")}
               className="flex justify-center items-center my-20 "
             >
               <img
-                src="assets/images/logo.png"
-                className=" cursor-pointer w-[100px] "
+                src={`assets/images/${isDark ? "logo2" : "logo"}.png`}
+                className=" cursor-pointer w-[150px] "
               />
             </AnchorLink>
 

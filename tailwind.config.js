@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1c1c22",
+        secondary: "#F0EFFE",
         brightBlue: "#007BFF",
         cyan: "#17C3B2",
         red: "#DC4492",
@@ -27,37 +28,40 @@ module.exports = {
       },
 
       animation: {
-        borderMove: "border_move 8s ease-in-out infinite 1s",
-        colorChange: "colorChange 8s infinite ease-in-out 1s",
+        colorChange: "colorChange 15s infinite ease-in-out 1s",
       },
       keyframes: {
         colorChange: {
           "0%, 100%": {
-            background: "#ff7eb3",
-            boxShadow: "5px -10px 20px rgba(255, 126, 179, 0.6)",
+            background: "#ff7eb3", // Pink
+            boxShadow: "-15px 10px 20px rgba(255, 126, 179, 0.6)",
             transform: "translate(0, 0)",
             borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%",
           },
-          "50%": {
-            background: "#00ffff",
-            boxShadow: "-10px 15px 30px rgba(0, 255, 255, 0.7)",
+          "20%": {
+            background: "#b772f7", // Purple
+            boxShadow: "15px -10px 20px rgba(183, 114, 247, 0.6)",
+            transform: "translate(10px, -20px)",
+            borderRadius: "70% 30% 50% 50% / 60% 40% 40% 60%",
+          },
+
+          "40%": {
+            background: "#ffcc00", // Yellow
+            boxShadow: "-15px -10px 20px rgba(255, 204, 0, 0.6)",
+            transform: "translate(-20px, 15px)",
+            borderRadius: "50% 50% 40% 60% / 40% 50% 60% 50%",
+          },
+          "60%": {
+            background: "#00ffff", // Cyan
+            boxShadow: "10px -15px 30px rgba(0, 255, 255, 0.7)",
             transform: "translate(15px, 20px)",
             borderRadius: "30% 60% 70% 40% / 50% 60% 30% 60%",
           },
-        },
-
-        border_move: {
-          "0%, 100%": {
-            borderWidth: "4px",
-            borderColor: "rgba(0, 255, 255, 0.8)",
-            borderRadius: "60% 40% 30% 70% / 60% 30% 70% 40%",
-            boxShadow: "0 0 15px 2px rgba(0, 255, 255, 0.6)",
-            transform: "translate(0px, 0px)",
-          },
-          "50%": {
-            borderWidth: "8px",
-            borderRadius: "30% 60% 70% 40% / 50% 60% 30% 60%",
-            transform: "translate(10px, 15px)",
+          "80%": {
+            background: "#f77272", // Lime Green
+            boxShadow: "-15px -20px 25px rgba(247, 114, 114, 0.7)",
+            transform: "translate(-10px, 5px)",
+            borderRadius: "40% 60% 50% 50% / 50% 50% 60% 40%",
           },
         },
       },
