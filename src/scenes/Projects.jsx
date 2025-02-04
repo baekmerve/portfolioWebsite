@@ -41,7 +41,7 @@ const Projects = () => {
       variants={fadeInLeft}
       className=" flex-col items-center justify-center w-5/6  mx-auto md:h-full py-32"
     >
-      <TextAnimation text="Here are My Works.." otherStyles="p-3" />
+      <TextAnimation text="Showcasing My Works.." otherStyles="p-3" />
 
       <div className="flex flex-col md:flex-row md:gap-[30px] container">
         <div className="w-full md:w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none ">
@@ -67,14 +67,14 @@ const Projects = () => {
               />
             </div>
             {/* border */}
-            <hr className="border border-white/20" />
+            <hr className="border border-brown/50 dark:border-white/40" />
             {/* project stack*/}
             <ul className="flex gap-4 justify-center md:justify-start flex-wrap">
               {project.stack.map((item, index) => {
                 return (
                   <li
                     key={index}
-                    className="text-xs md:text-sm text-white/60 rounded-full py-2 px-2 bg-white/5 flex justify-center items-center"
+                    className="text-xs md:text-sm text-brown/60dark:text-white/60 rounded-full py-2 px-2 bg-brown/20 dark:bg-white/5 flex justify-center items-center"
                   >
                     {item.name}
                   </li>
