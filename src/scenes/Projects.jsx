@@ -55,9 +55,11 @@ const Projects = () => {
               {project.title}
             </p>
             {/* project description */}
-            <p className="dark:text-white/60 text-center md:text-start md:text-xl ">
+
+            <p className="dark:text-white/60 text-center md:text-start lg:text-xl">
               {project.description}
             </p>
+
             {/* github & notion buttons */}
             <div className="flex justify-center md:justify-start">
               <SocialMediaIcons
@@ -66,6 +68,7 @@ const Projects = () => {
                 live={project.live}
               />
             </div>
+
             {/* border */}
             <hr className="border border-brown/50 dark:border-white/40" />
             {/* project stack*/}

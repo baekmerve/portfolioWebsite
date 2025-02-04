@@ -22,7 +22,7 @@ export const projectList = [
     image: "actionprice.png",
     title: "ActionPrice",
     description:
-      "Action Price is a platform that provides auction price information for agricultural and marine products, helping facilitate fair and transparent transactions between producers and consumers. By offering auction data, Action Price supports farmers and distributors in making rational transactions and transparently discloses prices, aiming to eliminate inconveniences in the trading process. Specifically, the platform is designed to quickly and easily provide essential information to users who struggle with product selection, thereby assisting them in making efficient and rational decisions.",
+      "Action Price is a platform that provides auction price information for agricultural and marine products, helping facilitate fair and transparent transactions between producers and consumers. Specifically, the platform is designed to quickly and easily provide essential information to users who struggle with product selection, thereby assisting them in making efficient and rational decisions.",
     github: "https://github.com/baekmerve/ActionPrice-FE",
     notion:
       "https://www.notion.so/3fc2723651e6407fb971b8fdfd8fe2d6?p=b0b962413bab4aa1b2c9bb7a4138474f&pm=c",
@@ -39,7 +39,7 @@ export const projectList = [
     image: "skyForecast.png",
     title: "SkyForecast",
     description:
-      " SkyForecast allows users to check real-time weather data, including temperature, humidity, wind speed, and air quality, for any city or their current location. It features a user-friendly interface with an option to toggle between light and dark themes. The app provides detailed weather information such as the current temperature, hourly and daily forecasts, and air pollution levels. The design is responsive, ensuring a seamless experience on both desktop and mobile devices. It also includes a 5-day forecast for planning ahead, and dynamic weather updates based on the user's location or searched city.",
+      " SkyForecast allows users to check real-time weather data, including temperature, humidity, wind speed, and air quality, for any city or their current location. It features a user-friendly interface with an option to toggle between light and dark themes. The app provides a 5-day forecast, detailed weather information such as the current temperature, hourly and daily forecasts, and air pollution levels.",
     github: "https://github.com/baekmerve/SKYForecast",
     notion:
       "https://www.notion.so/3fc2723651e6407fb971b8fdfd8fe2d6?p=b0b962413bab4aa1b2c9bb7a4138474f&pm=c",
