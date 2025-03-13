@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import TextAnimation from "@/components/TextAnimation";
+import { Button } from "@/components/ui/button";
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -50 },

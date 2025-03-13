@@ -1,19 +1,26 @@
-"use client";
-
 import { useSwiper } from "swiper/react";
 
 import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
+import { Button } from "./ui/button";
 
 const SliderButtons = ({ contaierStyles, btnStyles, iconStyles }) => {
   const swiper = useSwiper();
   return (
     <div className={contaierStyles}>
-      <button onClick={() => swiper.slidePrev()} className={btnStyles}>
+      <Button
+        aria-label="previous"
+        onClick={() => swiper.slidePrev()}
+        className={btnStyles}
+      >
         <PiCaretLeftBold className={iconStyles} />
-      </button>
-      <button onClick={() => swiper.slideNext()} className={btnStyles}>
+      </Button>
+      <Button
+        aria-label="next"
+        onClick={() => swiper.slideNext()}
+        className={btnStyles}
+      >
         <PiCaretRightBold className={iconStyles} />
-      </button>
+      </Button>
     </div>
   );
 };

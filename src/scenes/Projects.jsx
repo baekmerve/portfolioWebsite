@@ -17,11 +17,11 @@ const Projects = () => {
   };
 
   const contaierStyles =
-    "flex gap-2 absolute z-10 w-full bottom-[calc(50%_-_22px)] items-center justify-between";
+    "flex absolute z-10 w-full bottom-[calc(50%_-_22px)] items-center justify-between px-10";
 
   const btnStyles =
-    "-m-1 w-[40px] h-[40px] flex justify-center items-center transition-all rounded-2xl  ";
-  const iconStyles = "text-[32px]  hover:text-orange";
+    "-m-1 w-[40px] h-[40px] flex justify-center items-center transition-all rounded-xl ";
+  const iconStyles = "text-[32px]";
 
   const handleSlideChange = (swiper) => {
     //get current slide index

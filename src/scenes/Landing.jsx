@@ -66,7 +66,7 @@ const Landing = ({ setSelectedPage }) => {
             Let’s Connect
           </AnchorLink>
           <SocialMediaIcons
-            github={`https://github.com/baekmerve`}
+            github={"https://github.com/baekmerve"}
             notion={"https://www.notion.so/3fc2723651e6407fb971b8fdfd8fe2d6"}
           />
         </motion.div>

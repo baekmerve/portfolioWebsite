@@ -20,17 +20,18 @@ const SocialMediaIcons = ({ github, notion, live }) => {
                 <TbHomeLink className="text-3xl " />
               </TooltipTrigger>
               <TooltipContent className=" text-red dark:text-paper p-1 border-none bg-transparent dark:bg-transparent ">
-                Live
+                Demo
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
         </a>
       )}
+
       <a href={github} target="_blank" rel="noopener noreferrer">
         <TooltipProvider delayDuration={100}>
           <Tooltip>
             <TooltipTrigger className="w-[50px] h-[50px] rounded-full border border-brown/70 dark:bg-white/5 flex justify-center items-center hover:scale-105">
-              <SiGithub className="text-3xl " />
+              <SiGithub className=" text-3xl " />
             </TooltipTrigger>
             <TooltipContent className=" text-red dark:text-paper p-1 border-none bg-transparent dark:bg-transparent ">
               Github

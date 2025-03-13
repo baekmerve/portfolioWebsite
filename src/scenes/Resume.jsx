@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import DownloadCV from "../components/DownloadCV";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
